@@ -42,10 +42,10 @@ jobs:
 
     - name: Build & Push Docker Images
       run: |
-        docker build -t 66070291/worker:latest ./worker
-        docker build -t 66070291/scheduler:latest ./scheduler
-        docker build -t 66070291/web:latest ./web
+        docker build -t premlp/worker:latest ./worker
+        docker build -t premlp/scheduler:latest ./scheduler
+        docker build -t premlp/web:latest ./web
 
-        docker push 66070291/worker:latest
-        docker push 66070291/scheduler:latest
-        docker push 66070291/web:latest
+        docker push premlp/worker:latest
+        docker push premlp/scheduler:latest
+        docker push premlp/web:latest
